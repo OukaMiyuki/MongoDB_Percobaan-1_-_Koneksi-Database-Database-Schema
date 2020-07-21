@@ -17,6 +17,7 @@ const courseSchema = new mongoose.Schema({
 
 const Course = mongoose.model('Course', courseSchema);
 
+//this is how to insert data into the database
 async function createCourse(){
     try{
         const course = new Course({
